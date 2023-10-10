@@ -1,0 +1,39 @@
+package com.training.org;
+
+abstract class ParentClass{
+	public void displayParent() {
+		System.out.println("the displayParent method from parentclass is called");
+		
+	}
+	public abstract void show();
+}
+
+class Childclass extends ParentClass{
+	@Override
+	public void show() {
+		System.out.println("show method from child class1 is called");
+		
+	}
+}
+
+class Child2class extends ParentClass{
+	@Override
+	public void show() {
+		System.out.println("show method from child class2 is called");		
+	}
+}
+
+
+public class AbstractClassExapmle {
+	public static void main(String[] args) {
+	ParentClass p1 = new Childclass();
+	p1.displayParent();
+	p1.show();
+	
+	p1=new Child2class();
+	p1.displayParent();
+	p1.show();
+	
+	}
+
+}

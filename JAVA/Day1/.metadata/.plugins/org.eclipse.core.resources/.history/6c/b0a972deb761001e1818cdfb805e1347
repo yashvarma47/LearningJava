@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.training.org;
+
+
+public class Complex {
+	private int real;
+	private int imaginary;
+
+	
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

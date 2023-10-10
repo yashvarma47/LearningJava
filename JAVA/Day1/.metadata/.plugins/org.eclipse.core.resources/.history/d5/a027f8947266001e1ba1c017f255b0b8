@@ -1,0 +1,67 @@
+package com.training.org;
+
+
+class Employee{
+	private int empId;
+	private String  empName;
+	private double salary;
+	public Employee() {
+		System.out.println("default cons. of employee is called");
+		this.empId = 0;
+		this.empName = "";
+		this.salary = 0;
+	}
+	
+	public Employee(int empid,String empname, double salary) {
+
+		System.out.println("Parameterised Constructor of Employee");
+
+		this.empId=empId;
+
+		this.empName=empName;
+
+		this.salary=salary;
+
+		
+
+	}
+	
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "EmpId"+ this.empId+"Emp Name"+this.empName+"salary"+this.salary;
+	}
+	
+}
+
+class Organization{
+	private Employee emp;//obj
+	private String orgName;
+	private String orgLoc;
+	
+	public Organization() {
+		System.out.println("deafult cons. of org. is called");
+		this.orgName="";
+		this.orgLoc="";
+		this.emp = new Employee();
+	}
+	
+	public Organization(String orgName, String orgLoc, int empId, String empName, double salary) {
+		System.out.println("parameterized const. of org. is called");
+		this.orgName = orgName;
+		this.orgLoc = orgLoc;
+		this.emp = new Employee(empId, empName, salary);
+		
+		public String toString() {
+			return  emp.toString()+ "orgname"+this.orgName+"orglocation"+this.orgLoc;
+		}
+		
+	}
+	
+}
+
+public class ContainementExample {
+	public static void main(String[] args) {
+		Organization mav = new Organization("Maveric", "Pune",101,"Eshaan",10000);
+		System.out.println(mav);
+	}
+}

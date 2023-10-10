@@ -1,0 +1,14 @@
+class name with Pascal case{
+
+	Member variables are private and camel case 
+	
+	default constructor as public 
+	parameterised contructor as public
+
+	setters as public and camel case 
+	getters as public and camel case 
+	
+	toString as public and camel case 
+	Behaviours as public and camel case 
+
+}

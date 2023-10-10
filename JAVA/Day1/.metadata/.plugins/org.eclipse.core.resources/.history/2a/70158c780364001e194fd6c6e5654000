@@ -1,0 +1,17 @@
+package com.training.org;
+
+import java.util.Scanner;
+
+public class Salary {
+	Scanner input = new Scanner(System.in);
+	int comm;
+	
+	int sales = input.nextInt();
+	int salary = input.nextInt();
+	public void checksalary() {
+		if (sales<5000) {
+			salary=salary*0.05;
+		}
+	}
+
+}

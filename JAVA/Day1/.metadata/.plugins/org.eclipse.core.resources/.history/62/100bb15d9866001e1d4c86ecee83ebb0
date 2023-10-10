@@ -1,0 +1,22 @@
+package com.training.org;
+
+class Student{
+	private void printInfo() {
+		string name ;
+		System.out.println(this.name);
+//		System.out.println(this.age);
+	}
+}
+
+
+
+public class Javaoops {
+
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		s1.name = "Yash";
+		s1.printInfo();
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.training.org;
+
+public class XYZorg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1 = new Employee ();
+		System.out.println(e1);
+		
+		Employee e2 = new Employee (101,"Eshaan", 100000.0);
+		System.out.println(e2);
+
+	}
+
+}
