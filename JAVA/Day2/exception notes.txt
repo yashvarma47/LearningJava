@@ -1,0 +1,17 @@
+package com.training.org;
+
+public class ExceptionHandlingExample {
+
+	public static void main(String[] args) {
+		int a =0;
+		try {
+			a = 100/0;
+			System.out.println("value a "+a);//
+		} catch (ArithmeticException f) {
+			System.out.println("Found error "+f.getMessage());
+		}
+		
+
+	}
+
+}
